@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/app.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello</h1>
+  <main class="container">
+    <section class="section1">
+      <form>
+        <div class="mb-3">
+          <label for="titleBootstrap" class="form-label">Title</label>
+          <input type="text" class="form-control" id="titleBootstrap" name="title">
+        </div>
+        <div class="mb-3">
+          <label for="descriptionBootstrap" class="form-label">Description</label>
+          <input type="text" class="form-control" id="descriptionBootstrap" name="description">
+        </div>
+        <div class="mb-3">
+          <label for="dateBootstrap" class="form-label">Date</label>
+          <input type="date" class="form-control" id="dateBootstrap" name="date">
+        </div>
+        <div class="mb-3">
+          <label for="colorBootstrap" class="form-label">Color</label>
+          <input type="color" class="form-control form-control-color" id="colorBootstrap" name="color" title="Choose your color">
+        </div>
+        <div class="mb-3">
+          <label for="statusBootstrap" class="form-label">Status</label>
+          <input type="text" class="form-control" id="statusBootstrap" name="status">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <section class="section2">
+      <form>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title">
+
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description">
+
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+
+        <label for="status">Status</label>
+        <input type="text" name="status" id="status">
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
