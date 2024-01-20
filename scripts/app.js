@@ -1,43 +1,24 @@
-function sayHello (name, lastName) {
-  console.log('Hello ' + name + ' ' + lastName)
+/* eslint-disable no-undef */
+function saveTask () {
+  console.log('saveTask')
 }
-
-function add (a, b) {
-  return a + b
-}
-const numbers = [12, 4, 123, 4567, 234, 56, 12, 87, 124, 865, 233, 788, 43, 91, 544, 782, 653, 845]
-function printNumbers () {
-  for (let i = 0; i <= 20; i++) {
-    if (i !== 7 || i !== 13) {
-      console.log(i)
-    }
+function changeIcon () {
+  const nonImportant = 'fa-solid fa-folder'
+  const important = 'fa-solid fa-mug-hot'
+  const icon = $('#iImportant')
+  if (icon.hasClass(nonImportant)) {
+    icon.removeClass(nonImportant).addClass(important)
+  } else {
+    icon.removeClass(important).addClass(nonImportant)
   }
-}
-
-function printNumbers1 () {
-  numbers.forEach((number) => console.log(number))
-}
-
-function printNumbers2 () {
-  const sum = numbers.reduce((a, b) => a + b, 0)
-  console.log(sum)
-}
-
-function printNumbers3 () {
-  const number = numbers.filter((number) => number > 500)
-  console.log(number)
 }
 
 function init () {
   console.log('init')
-  const name = 'cesar'
-  sayHello(name, 'cordova')
-  sayHello('cesar', 'cordova')
-  const result = add(1, 2)
-  console.log(result)
-  printNumbers()
-  printNumbers1()
-  printNumbers2()
-  printNumbers3()
+
+  // hook events
+  $('#btnSave').click(saveTask)
+  $('#iImportant').click(changeIcon)
 }
+
 window.onload = init

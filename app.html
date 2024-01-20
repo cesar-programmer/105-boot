@@ -14,48 +14,36 @@
     <section class="section1">
       <form>
         <div class="mb-3">
+          <i id="iImportant" class="fa-solid fa-mug-hot" style="cursor: pointer;"></i>
           <label for="titleBootstrap" class="form-label">Title</label>
-          <input type="text" class="form-control" id="titleBootstrap" name="title">
+          <input type="text" class="form-control" id="title titleBootstrap" name="title" required>
         </div>
         <div class="mb-3">
           <label for="descriptionBootstrap" class="form-label">Description</label>
-          <input type="text" class="form-control" id="descriptionBootstrap" name="description">
+          <input type="text" class="form-control" id="description descriptionBootstrap" name="description">
         </div>
         <div class="mb-3">
           <label for="dateBootstrap" class="form-label">Date</label>
-          <input type="date" class="form-control" id="dateBootstrap" name="date">
+          <input type="date" class="form-control" id="date dateBootstrap" name="date">
         </div>
         <div class="mb-3">
           <label for="colorBootstrap" class="form-label">Color</label>
-          <input type="color" class="form-control form-control-color" id="colorBootstrap" name="color" title="Choose your color">
+          <input type="color" class="form-control form-control-color" id="color colorBootstrap" name="color" title="Choose your color">
         </div>
         <div class="mb-3">
           <label for="statusBootstrap" class="form-label">Status</label>
-          <input type="text" class="form-control" id="statusBootstrap" name="status">
+          <select class="form-select" id="status statusBootstrap" name="status">
+            <option selected disabled>Choose...</option>
+            <option value="complete">Complete</option>
+            <option value="incomplete">Incomplete</option>
+          </select>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button id="btnSave" class="btn btn-primary">Submit</button>
       </form>
     </section>
 
     <section class="section2">
-      <form>
-        <label for="title">Title</label>
-        <input type="text" name="title" id="title">
-
-        <label for="description">Description</label>
-        <input type="text" name="description" id="description">
-
-        <label for="date">Date</label>
-        <input type="date" name="date" id="date">
-
-        <label for="color">Color</label>
-        <input type="color" name="color" id="color">
-
-        <label for="status">Status</label>
-        <input type="text" name="status" id="status">
-
-        <button type="submit">Submit</button>
-      </form>
+      <i class="fa-solid fa-laptop-code"></i>
     </section>
   </main>
 
